@@ -46,12 +46,17 @@ afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
 describe('App Component', () => {
-  test('renders the header', async () => {
+  test('renders the Christmas-themed header', async () => {
     await act(async () => {
       render(<App />);
     });
-    expect(screen.getByText('React Frontend with Node Backend')).toBeInTheDocument();
-    expect(screen.getByText('Connected to in-memory database')).toBeInTheDocument();
+    expect(screen.getByText(/Christmas Wish List/i)).toBeInTheDocument();
+    expect(screen.getByText(/Keep track of your holiday tasks and wishes/i)).toBeInTheDocument();
+    
+    // Check that the header image is rendered
+    const headerImage = screen.getByAltText('Christmas Holiday Header');
+    expect(headerImage).toBeInTheDocument();
+    expect(headerImage).toHaveAttribute('src', '/images/header.png');
   });
 
   test('loads and displays items', async () => {

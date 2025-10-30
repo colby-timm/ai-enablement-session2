@@ -24,7 +24,13 @@ db.exec(`
 `);
 
 // Insert some initial data
-const initialItems = ['Item 1', 'Item 2', 'Item 3'];
+const initialItems = [
+  'Buy Christmas presents for family',
+  'Decorate the Christmas tree',
+  'Bake gingerbread cookies',
+  'Send holiday cards',
+  'Wrap presents with festive paper'
+];
 const insertStmt = db.prepare('INSERT INTO items (name) VALUES (?)');
 
 initialItems.forEach(item => {

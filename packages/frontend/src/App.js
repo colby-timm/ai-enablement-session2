@@ -76,8 +76,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>To Do App</h1>
-        <p>Keep track of your tasks</p>
+        <img src="/images/header.png" alt="Christmas Holiday Header" className="header-image" />
       </header>
 
       <main>
@@ -90,7 +89,7 @@ function App() {
               onChange={(e) => setNewItem(e.target.value)}
               placeholder="Enter item name"
             />
-            <button type="submit">Add Item</button>
+            <button type="submit">🎄 Add Item</button>
           </form>
         </section>
 
