@@ -9,3 +9,4 @@ This document outlines the updates required for the application.
 - Apply Christmas-themed colors, graphics, and styling to the UI
 - Include seasonal decorations and visual elements throughout the application
 - Display Christmas-appropriate messaging and content
+- Use the `docs/header.png` as the header image in todo app

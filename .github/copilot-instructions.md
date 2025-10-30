@@ -10,3 +10,4 @@ The project documentation will be built during the bootcamp sessions.
 
 - [Project Overview](../docs/project-overview.md) - Overview of the project
 - [Functional Requirements](../docs/functional-requirements.md) - Core updates and features needed for the application
+- [UI Guidelines](../docs/ui-guidelines.md) - Design system and Christmas color palette for the application
