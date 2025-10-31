@@ -56,28 +56,23 @@ section h2 {
   font-size: 1.5rem;
   border-bottom: 2px solid #FFD700;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.add-item-section form {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-input {
-  flex: 1;
-  padding: 10px;
-  border: 2px solid #C0C0C0;
-  border-radius: 6px;
+.grid-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #0B5345;
+  border-radius: 4px;
   font-size: 1rem;
   font-family: Georgia, Garamond, 'Times New Roman', serif;
-  transition: border-color 0.3s ease;
+  background-color: #FFFFFF;
 }
 
-input:focus {
+.grid-input:focus {
   outline: none;
-  border-color: #0B5345;
-  box-shadow: 0 0 0 2px rgba(11, 83, 69, 0.1);
+  border-color: #C41E3A;
+  box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1);
 }
 
 button {
@@ -104,47 +99,6 @@ button:active {
   transform: translateY(0);
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 15px 0 0 0;
-}
-
-li {
-  padding: 15px;
-  border-bottom: 1px solid #C0C0C0;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.2s ease;
-}
-
-li:hover {
-  background-color: #F8F8F0;
-}
-
-li:last-child {
-  border-bottom: none;
-}
-
-li span {
-  color: #1B3E37;
-  font-size: 1.1rem;
-}
-
-.delete-btn {
-  background-color: #C41E3A;
-  color: #F8F8F0;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  margin-left: 10px;
-}
-
-.delete-btn:hover {
-  background-color: #8B0000;
-}
-
 .error {
   color: #C41E3A;
   font-weight: bold;
@@ -152,9 +106,5 @@ li span {
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #C41E3A;
-}
-
-.items-section p {
-  color: #0B5345;
-  font-style: italic;
+  margin-bottom: 15px;
 }
